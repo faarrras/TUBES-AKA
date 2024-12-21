@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisis Pengurutan Harga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Analisis Pengurutan Harga</h1>
+            <div class="subtitle">Perbandingan Metode Iteratif dan Rekursif</div>
+        </header>
+
+        <!-- Menampilkan Nama Pembuat di atas konten utama -->
+        <div class="creator-info">
+            <p>Farras Nafisya Syailendara (103012300305)</p>
+            <p>Ainun Widyah Astanti (103012300425) </p>
+        </div>
+
+        <div class="main-content">
+            <div class="input-section">
+                <div class="input-container">
+                    <label for="inputPrices">Masukkan Daftar Harga:</label>
+                    <input 
+                        type="text" 
+                        id="inputPrices" 
+                        placeholder="Contoh: 50000, 25000, 75000, 30000"
+                    >
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button onclick="processIterative()" class="btn-iterative">
+                    Metode Iteratif
+                </button>
+                <button onclick="processRecursive()" class="btn-recursive">
+                    Metode Rekursif
+                </button>
+            </div>
+
+            <div id="sortedResults">
+                <h3>Hasil akan ditampilkan di sini...</h3>
+                <p>Masukkan daftar harga dan pilih metode pengurutan</p>
+            </div>
+        </div>
+        <footer>
+            <p>Website created for learning purposes</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

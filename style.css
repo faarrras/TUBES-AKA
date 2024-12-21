@@ -1,0 +1,211 @@
+/* Reset CSS untuk menghindari margin/padding default browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3c72 0%, #ffffff 100%);
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: rgba(255, 250, 250, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1); /* Lebih dalam */
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: #1e3c72;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+    color: #eef2ff;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* Nama Pembuat di atas konten utama */
+.creator-info {
+    background: #ffffff;  /* Warna latar belakang untuk info pembuat */
+    padding: 1rem;
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 10px;
+    max-width: 80%;
+    color: #1e3c72;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Main content styling */
+.main-content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.input-section {
+    margin-bottom: 3rem;  /* Jarak lebih besar antara input dan tombol */
+    text-align: center;
+}
+
+.input-container {
+    position: relative;
+    margin: 1rem auto;
+    max-width: 500px;
+}
+
+input {
+    width: 70%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 2px solid #dee1e6;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Hover effect pada input */
+input:hover {
+    border-color: #2a5298;
+    box-shadow: 0 0 5px rgba(42, 82, 152, 0.4);
+}
+
+input:focus {
+    outline: none;
+    border-color: #2a5298;
+    box-shadow: 0 0 0 3px rgba(42, 82, 152, 0.2);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #1e3c72;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Button Group with Adjusted Gap */
+.button-group {
+    display: flex;
+    gap: 2.5rem;  /* Mengatur jarak antara tombol */
+    justify-content: center;
+    margin-top: 1rem;  /* Menambah jarak atas antara input dan tombol */
+}
+
+button {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 150px;
+    color: white;
+    background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+    box-shadow: 0 4px 12px rgba(42, 82, 152, 0.3); /* Shadow lebih halus */
+}
+
+/* Hover efek untuk tombol */
+button:hover {
+    background: linear-gradient(135deg, #1e3c72 0%, #152b52 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(42, 82, 152, 0.3);
+}
+
+/* Tombol Iteratif */
+.btn-iterative {
+    background: linear-gradient(135deg, #1e3c72 0%, #152b52 100%);
+}
+
+/* Tombol Rekursif */
+.btn-recursive {
+    background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+}
+
+#sortedResults {
+    background: rgba(248, 250, 252, 0.9); /* Menambahkan transparansi agar tampak lebih ringan */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 80%;
+    text-align: center;
+}
+
+#sortedResults h3 {
+    color: #1e3c72;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+#sortedResults p {
+    margin: 0.5rem 0;
+    color: #334155;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #1e3c72;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        margin: 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 80%;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    #sortedResults {
+        max-width: 95%;
+    }
+}
